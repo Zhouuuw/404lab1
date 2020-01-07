@@ -40,7 +40,8 @@ print(requests.__version__)
 
 # --- Question 6: What status code is returned for http://google.com/teapot?
 # --- 418. I'm a Teapot. Both -i and -iL
-requests.get("http://google.com/teapot")
+var = requests.get("https://raw.githubusercontent.com/Zhouuuw/404lab1/master/script.py")
+print(var.content)
 # --- Question 6 : What happens when you curl http://www.google.com/teapot?
 # --- 418. both for -i and -il
 # --- reference for 418: https://meta.stackexchange.com/questions/185426/stack-overflow-returning-http-error-code-418-im-a-teapot
