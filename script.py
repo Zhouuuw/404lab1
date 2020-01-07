@@ -40,8 +40,7 @@ print(requests.__version__)
 
 # --- Question 6: What status code is returned for http://google.com/teapot?
 # --- 418. I'm a Teapot. Both -i and -iL
-var = requests.get("https://raw.githubusercontent.com/Zhouuuw/404lab1/master/script.py")
-print(var.content)
+
 # --- Question 6 : What happens when you curl http://www.google.com/teapot?
 # --- 418. both for -i and -il
 # --- reference for 418: https://meta.stackexchange.com/questions/185426/stack-overflow-returning-http-error-code-418-im-a-teapot
@@ -51,4 +50,12 @@ print(var.content)
 # when you used -X POST? What is this method useful for?
 # we change the request to post and sent the data of "X=Y" 
 
-#
+# Commit your Python script and push it to GitHub.
+# Find the raw URL to your Python script on GitHub.
+# Modify your Python script so that it downloads itself from GitHub and prints out its own source code from GitHub.
+# Push the new version of your Python script to GitHub.
+var = requests.get("https://raw.githubusercontent.com/Zhouuuw/404lab1/master/script.py")
+print(var.content)
+
+# ---Question 8: What is the raw URL to your Python script on GitHub?
+#    https://raw.githubusercontent.com/Zhouuuw/404lab1/master/script.py
